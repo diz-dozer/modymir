@@ -1,0 +1,136 @@
+._banans {
+
+  //  height: 300px;
+  //  margin-bottom: 20px;
+  //  overflow: hidden;
+
+  .banan {
+
+    height: 125px;
+    padding: 20px;
+
+    border-radius: 5px;
+
+    &._delivery {
+
+//      background-image: url('/data/acs/bg_banan.png');
+//      background-repeat: no-repeat;
+
+
+
+      background-color: #A36399;
+//      background-position: 100% 0;
+
+      color: #fff;
+      line-height: 1.3;
+
+      .lbl,
+      .hint {
+        display: block;
+        margin-left: 70px;
+      }
+
+      .lbl {
+        font-size: 20px;
+        font-weight: 300;
+        margin-bottom: 5px;
+        position: relative;
+      }
+
+      .hint {
+        font-size: 13px;
+      }
+
+      &:before {
+
+        &:extend(.sprite)
+      ;
+
+        background-position: 0 -300px;
+        content: '';
+
+        opacity: .8;
+
+        display: block;
+        width: 41px;
+        height: 30px;
+
+        top: 30px;
+        left: 30px;
+        opacity: 0.8;
+        position: absolute;
+
+      }
+    }
+
+    &._subscribe {
+
+      background-color:  #7f649c;
+      color: #fff;
+
+      .input {
+
+        font-family: @font-family;
+//        border: 1px solid #7f649c;
+        border: 0;
+        border-radius: 3px;
+//        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .2);
+        color: #fff;
+        font-size: 13px;
+        margin-right: 10px;
+        padding: 3px 6px;
+
+        width: 120px;
+        line-height: 21px;
+        height: 21px;
+
+      }
+
+      .btn {
+
+        line-height: 21px;
+        font-size: 12px;
+        padding: 3px 5px;
+
+        background: #7F649C;
+        color: #fff;
+
+      }
+
+      dt {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 1.3;
+        margin-bottom: 15px;
+        padding-left: 75px;
+        position: relative;
+
+        &:before {
+          color: rgba(255, 255, 255, .5);
+          content: '\f003';
+          font-family: 'FontAwesome';
+          font-size: 45px;
+          font-weight: 700;
+          left: 3px;
+          position: absolute;
+          top: -15px;
+        }
+      }
+
+    }
+
+  }
+
+}
+
+._banan {
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.slider, .slider .slide, .slider .img {
+  display: inline-block;
+  height: inherit !important;
+  width: 100%;
+}

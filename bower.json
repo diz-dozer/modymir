@@ -1,0 +1,39 @@
+{
+  "name": "abra",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "jquery-form": "latest",
+    "jquery-validation": "latest",
+    "doT": "latest",
+    "jquery-cycle2": "latest",
+    "elevatezoom": "latest",
+    "jquery-hoverIntent":"latest"
+  },
+  "overrides": {
+    "doT": {
+      "ignore": true
+    },
+    "jquery": {
+      "main": ["dist/jquery.min.js"]
+    },
+    "jquery-form": {
+      "main": ["jquery.form.js"]
+    },
+    "jquery-validation": {
+      "main": ["dist/jquery.validate.min.js"]
+    },
+    "jquery-cycle2": {
+      "main": [
+        "build/jquery.cycle2.min.js"
+      ]
+    },
+    "elevatezoom":{
+      "ignore": true
+    },
+    "jquery-hoverIntent":{
+      "main": ["jquery.hoverIntent.js"]
+    }
+
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "require": {
+    "firephp/firephp-core": "dev-master",
+    "eoghanobrien/php-simple-mail": "dev-master",
+    "wixel/gump": "dev-master"
+  },
+  "autoload": {
+    "classmap": [
+      "dev/classes/class.excel_reader2.php",
+      "dev/classes/form.php"
+    ],
+    "files": [
+      "dev/classes/function.php"
+    ]
+  }
+}

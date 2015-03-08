@@ -1,0 +1,235 @@
+.cart,
+.order_info,
+.radio_tap {
+
+  width: 100%;
+  border: 0;
+
+  color: #222;
+  margin-bottom: 30px;
+
+  //  border-radius: 5px;
+
+  th {
+    font-weight: 300;
+    text-align: left;
+  }
+
+  legend,
+  td,
+  th {
+    padding: 15px 20px;
+    vertical-align: middle;
+  }
+
+  tbody {
+
+    tr {
+      background: rgba(255, 255, 255, .5);
+      &:last-child {
+        border-bottom: 0;
+      }
+      border-bottom: 1px solid rgba(0, 0, 0, .05);
+    }
+  }
+
+  thead,
+  tfoot {
+
+    tr {
+
+      border-bottom: 1px solid rgba(255, 255, 255, .5);
+
+      th, td {
+        background-color: rgba(0, 0, 0, .08);
+
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      &.info {
+        th, td {
+          background-color: fade(#CBDD86, 50%);
+        }
+
+      }
+
+      &.error {
+
+        th, td {
+          background-color: fade(#D48194, 50%);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .product_name {
+
+    display: inline-block;
+    font-family: @font-family-logo;
+    font-size: 18px;
+    font-weight: 300;
+    &:first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  .product_code {
+    font-size: 12px;
+    color: #777;
+  }
+
+  .remove_action {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 5%;
+  }
+
+  .remove_link {
+
+    display: inline-block;
+    font-size: 27px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    text-decoration: none;
+    color: #E2233C;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .amount {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 3em;
+  }
+}
+
+.radio_tap {
+
+  @rd: 5em;
+
+  box-sizing: border-box;
+
+  border-bottom: @hr solid rgba(0, 0, 0, 0.1);
+
+  legend, dl, dd, label {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  legend {
+    background-color: rgba(0, 0, 0, .1);
+    //    border-radius: 5px 5px 0 0;
+  }
+
+  dl, dt, dd, label, input[type='radio'] {
+    margin: 0;
+  }
+
+  dl {
+
+    position: relative;
+    background-color: rgba(255, 255, 255, .5);
+    border-bottom: 1px solid rgba(210, 207, 216, 1);
+    transition: background .2s ease;
+
+    &.checked {
+      transition: none;
+      background-color: fade(#CBDD86, 50%);
+      &:hover {
+        background-color: fade(#CBDD86, 50%);
+      }
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .03);
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+  }
+
+  dt {
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: @rd;
+
+    position: absolute;
+    text-align: center;
+    //    background-color: rgba(0, 0, 0, .1);
+
+    input[type='radio'] {
+      position: absolute;
+      top: 35%;
+      left: 35%;
+
+      //      vertical-align: baseline;
+    }
+
+  }
+
+  label {
+
+    //    display: table;
+    //    width: 100%;
+    //    position: relative;
+    padding: 15px 20px 15px @rd;
+    cursor: pointer;
+
+  }
+
+  .inner {
+    display: table;
+    width: 100%;
+
+    .name,
+    .rate,
+    .description {
+      display: table-cell;
+      font-weight: 300;
+    }
+
+    .name {
+      width: 30%;
+    }
+
+    .description {
+      width: 60%;
+    }
+
+    .rate {
+      width: 30%;
+    }
+
+  }
+
+}
+
+.order_info {
+
+  background: rgba(255, 255, 255, .5);
+
+  tr > td:first-child {
+    width: 20%;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+}
+
+textarea[name='order_comment'] {
+  width: 100%;
+  max-width: 100%;
+}

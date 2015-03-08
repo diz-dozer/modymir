@@ -1,0 +1,31 @@
+<div class="modal _cart">
+<h1 class="tit">Корзина</h1>
+<table>
+<thead>
+<tr>
+<th>Фото</th>
+<th>Название</th>
+<th>Удалить</th>
+<th>Колличество</th>
+<th>Стоимость</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="{{=it.src}}" /></td>
+<td>{{=it.name}}</td>
+<td>{{=it.qty}}</td>
+<td>
+</td>
+<td>
+{{=it.price}}
+</td>
+<td>
+<button class="btn" href="">Оформить заказ</button><br/>
+<a>Продолжить покупки</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>

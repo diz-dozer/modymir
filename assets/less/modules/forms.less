@@ -1,0 +1,229 @@
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input, textarea, button, select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  box-sizing: border-box;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+form,
+select,
+input,
+textarea,
+option,
+output {
+
+  font-family: @font-family-form;
+  font-size: @font-size-form;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
+  // so we reset that to ensure it behaves more like a standard block element.
+  // See https://github.com/twbs/bootstrap/issues/12359.
+  min-width: 0;
+}
+
+legend {
+
+  display: block;
+  width: 100%;
+  padding: 0;
+  line-height: inherit;
+  border: 0;
+
+  //  margin-bottom: @line-height-computed;
+  //  font-size: (@font-size-base * 1.5);
+  //  color: @legend-color;
+  //  border-bottom: 1px solid @legend-border-color;
+}
+
+label {
+  display: block;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  font-weight: 300;
+}
+
+//input[type='radio'],
+//input[type='checkbox'] {
+//  margin: 4px 0 0;
+//  margin-top: 1px \9; // IE8-9
+//  line-height: normal;
+//}
+
+input[type='file'] {
+  display: block;
+}
+
+input[type='range'] {
+  display: block;
+  width: 100%;
+}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+// Focus for file, radio, and checkbox
+input[type='file']:focus,
+input[type='radio']:focus,
+input[type='checkbox']:focus {
+  //  .tab-focus();
+}
+
+output {
+  display: block;
+  font-size: @font-family-base;
+
+}
+
+input[type='search'] {
+  -webkit-appearance: none;
+}
+
+form {
+
+  .col + .buttons,
+  .field + .buttons {
+    margin-top: @grid-gutter;
+  }
+
+  .field {
+
+    margin-bottom: @grid-gutter/2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  label {
+
+    display: block;
+    font-weight: 300;
+    margin-bottom: 3px;
+    color: #555;
+  }
+
+
+  ._checkbox_label {
+
+
+
+    input, span {
+
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 34px;
+
+    }
+    input[type='checkbox'] {
+      margin: 0;
+    }
+
+    span {
+      margin-left: 1em;
+    }
+  }
+
+  small.invalid {
+    font-size: 12px;
+    font-family: @font-family-base;
+    display: block;
+    color: #A36399;
+    line-height: 2em;
+  }
+
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select,
+textarea {
+
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: left;
+
+  width: 80%;
+  max-width: 20em;
+
+  padding: 6px 12px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  height: 34px;
+
+  border: 1px solid #bbb;
+  background: #f9f9f9;
+  color: #555;
+
+  outline: 0;
+
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+  &:focus {
+
+    transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+
+    outline: 0;
+    background-color: #fff;
+
+    //    border-color: #66afe9;
+    //    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+    //    0 0 8px rgba(102, 175, 233, .6);
+
+    border-color: #A36399;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075),
+    0 0 8px rgba(163, 99, 153, .6);
+
+  }
+
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  height: auto;
+  min-height: 78px;
+  max-height: 15em;
+}
+
+/*Placeholder
+-------------------------------------------------- */
+.placeholder();

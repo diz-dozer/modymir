@@ -1,0 +1,136 @@
+#header {
+
+  //background: rgba(0, 0, 0, .1);
+  //  background: #D2CFD8;
+  background: #EAE6F0;
+  padding: 1rem 0;
+
+  .company {
+
+    display: table;
+    width: 100%;
+
+    dd, dt {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    a {
+
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .logo {
+      font-family: @font-family-logo;
+      font-weight: 400;
+      font-size: 30px;
+      //      width: 30%;
+      cursor: default;
+
+      &, a {
+        color: #555;
+
+        &:hover {
+          color: #A36399;
+        }
+
+      }
+
+      .slogan {
+        font-family: @font-family-base;
+        font-size: @font-size-base;
+        font-weight: 300;
+        color: #777;
+        display: block;
+        margin-top: 8px;
+      }
+
+    }
+
+    .enter,
+    .help {
+      display: inline-block;
+      font-family: @font-family-logo;
+      font-size: 17px;
+      font-weight: 300;
+      color: #555;
+
+      margin-left: .5em;
+      margin-right: .5em;
+
+      transition: color .2s ease;
+
+      &:hover {
+        transition: color .2s ease;
+        color: #A36399;
+      }
+    }
+
+    .basket {
+
+      margin-right: .5em;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+
+      background: #D48194 url('/assets/cart_icon.png') no-repeat 50% 50%;
+
+      border-radius: 3px;
+      padding: 12px;
+      width: 19px;
+      height: 12px;
+      line-height: 36px;
+
+      &.empty {
+        opacity: .8;
+        .amount {
+          display: none;
+        }
+      }
+
+      .amount {
+
+        @lh: 1.7em;
+        position: absolute;
+
+        top: -.7em;
+        right: -.7em;
+
+        width: @lh;
+        height: @lh;
+        line-height: @lh;
+        border-radius: @lh/2;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 13px;
+
+        background: #A36399;
+        color: #fff;
+
+        font-family: @font-family-base;
+      }
+
+    }
+
+    a.basket {
+      &:hover {
+        transition: background-color .2s ease;
+        background-color: #A36399;
+
+        .amount {
+          transition: background-color .2s ease;
+          background-color: #D48194;
+          //          box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+        }
+      }
+    }
+
+  }
+}

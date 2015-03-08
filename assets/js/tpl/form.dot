@@ -1,0 +1,33 @@
+
+<div class="md-modal">
+
+
+<h1 class="tit">{{=it.title}}</h1>
+
+<form class="md-form">
+
+{{~it.form :value:index}}
+<div class="field">
+
+{{? value.label}}
+<label for="fld_{{=index}}">{{=value.label}}</label>
+{{?}}
+
+{{? value.additional}}
+{{=value.additional}}
+{{?}}
+
+<{{=value.el}} id="fld_{{=index}}" name="{{=value.name}}" type="{{=value.type}}" value="{{? value.val}}{{=value.val}}{{?}}" {{? value.required}}required="required"{{?}} {{? value.placeholder}}placeholder="{{=value.placeholder}}"{{?}}/>
+</div>
+{{~}}
+
+
+
+<div class="field">
+<button class="btn" type="submit">{{=it.submit.name}}</button>
+{{? it.submit.additional}}{{=it.submit.additional}}{{?}}
+</div>
+
+
+</form>
+</div>

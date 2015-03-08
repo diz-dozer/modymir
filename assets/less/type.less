@@ -1,0 +1,152 @@
+/* Typography
+-------------------------------------------------- */
+
+body {
+
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @base-line;
+  min-height: 100%;
+  color: @color-font;
+
+}
+
+code,
+kbd,
+pre,
+samp {
+  font: normal 1em @font-family-mono;
+}
+
+/* Text-level
+-------------------------------------------------- */
+
+b, strong, th, dt, caption {font-weight: bold;}
+dfn, i, em, cite {font-style: italic;}
+del, s {text-decoration: line-through;}
+ins {text-decoration: none;}
+pre {white-space: pre;}
+sub, sup {line-height: 0;position: relative;}
+sup {top: -.5em;}
+sub {bottom: -.25em;}
+big {font-size: 120%;}
+small, sub, sup {font-size: 85%;}
+
+
+
+/* Text-level
+-------------------------------------------------- */
+
+ol {
+  li {
+    margin-left: 1.5em;
+    margin-bottom: .5em;
+    list-style-position: outside;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ol {
+  list-style: decimal outside;
+
+  ol li {
+    list-style-type: lower-alpha;
+
+    ol li {
+      list-style-type: lower-roman;
+    }
+  }
+
+}
+
+/* Headers
+-------------------------------------------------- */
+
+
+
+
+h1,.h1,
+h2,.h2,
+h3,.h3,
+h4,.h4,
+h5,.h5,
+h6 .h6
+{
+
+  font-family:  @font-family-logo;
+
+
+  color: #333;
+  line-height: normal;
+
+  .hyphenator;
+  text-rendering: optimizeLegibility;
+  line-height: 1.2;
+  margin-bottom: @grid-gutter;
+
+}
+
+h1,.h1{font-size: 30px;  font-weight: 300;}
+h2,.h2{font-size: 30px;  font-weight: 300;}
+h3,.h3{font-size: 24px;  font-weight: 400;}
+h4,.h4{font-size: 24px;  font-weight: 400;}
+h5,.h5{font-size: 18px;  font-weight: 400;}
+h6,.h6{font-size: 18px;  font-weight: 400;}
+
+
+
+
+/* Spacing
+-------------------------------------------------- */
+
+p,
+dl,
+ol,
+ul,
+hr,
+pre,
+table,
+address,
+fieldset,
+figure,
+section
+{
+
+  margin-bottom: @grid-gutter;
+  &:last-child {margin-bottom: 0;}
+
+}
+
+
+
+/* Links
+-------------------------------------------------- */
+
+a {
+  color: @color-lnk;
+  text-decoration: underline;
+
+  &:hover {
+    color: @color-lnk-hvr;
+    text-decoration: none;
+  }
+}
+
+::selection {
+  background: @background-selection;
+  color: @color-selection;
+}
+
+::-moz-selection {
+  background: @background-selection;
+  color: @color-selection;
+}
+
+img::selection {
+  background: transparent;
+}
+
+

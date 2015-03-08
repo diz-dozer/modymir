@@ -1,0 +1,40 @@
+.breadcrumbs {
+
+  margin-bottom: 1rem;
+
+  li, a, b {
+
+    list-style: none;
+    font-weight: 300;
+
+
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+
+
+  }
+
+  li + li {
+
+    &:before {
+      content: '/';
+      padding: 0 .6em;
+      color: #888;
+    }
+  }
+
+  a, b {
+    color: #333;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .active {
+    color: #888;
+  }
+
+}
+

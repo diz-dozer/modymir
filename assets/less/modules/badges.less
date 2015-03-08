@@ -1,0 +1,45 @@
+.rib {
+  background: #D8238F;
+  border-radius: 1px 1px 0 0;
+  color: #fff;
+
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+
+  font-family: Arial;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 8px 0 5px;
+
+  text-align: center;
+  white-space: nowrap;
+  width: 30px;
+
+  display: none;
+}
+
+.rib:before, .rib:after {
+  border-style: solid;
+  bottom: -7px;
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+
+}
+
+.rib:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #D8238F;
+  border-width: 8px 0 8px 17px;
+  left: 0;
+}
+
+.rib:before {
+  border-color: rgba(0, 0, 0, 0) #D8238F rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  border-width: 8px 17px 8px 0;
+  right: 0;
+}

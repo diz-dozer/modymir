@@ -1,0 +1,32 @@
+nav{
+  .cabinet_menu{
+    margin-bottom: @grid-gutter;
+  }
+}
+
+.cabinet_menu {
+
+
+  li {
+
+    &:after{
+      display: inline-block;
+      content: '|';
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 .8em;
+    }
+    &:last-child:after{
+      content: '';
+      display: none;
+      margin: 0;
+    }
+  }
+
+
+  li, a {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+}

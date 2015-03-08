@@ -1,0 +1,21 @@
+<div class="md-modal">
+<div class="response">
+<h1 class="tit">Вход на сайт</h1>
+<div class="txt"></div>
+</div>
+<form class="md-form">
+<div class="field">
+<label for="fld_0">Ваш логин</label>
+<input type="text" required="required" id="fld_0" name="user_login" value=""/>
+</div>
+<div class="field">
+<label for="fld_1">Пароль</label>
+<a rel="nofollow" href="/index.php?logging" class="forgot-pass">Забыли пароль?</a>
+<input type="password" required="required" id="fld_1" name="user_pw" value=""/>
+</div>
+<div class="field">
+<input type="hidden" name="ajx_form" value="enter" />
+<button type="submit" class="btn">Войти</button>
+</div>
+</form>
+</div>

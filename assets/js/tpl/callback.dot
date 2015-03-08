@@ -1,0 +1,18 @@
+<div class="md-modal">
+<div class="response">
+<h1 class="tit">Заказать обратный звонок</h1>
+<div class="txt"><p>Наше менеджеры перезвонят Вам</p></div>
+</div>
+<form class="md-form">
+<div class="field">
+<input type="text" name="name" value="" placeholder="Ваше Имя.."/>
+</div>
+<div class="field">
+<input type="text" required="required" name="phone" value="" placeholder="Контактный телефон.."/>
+</div>
+<div class="field">
+<input type="hidden" name="ajx_form" value="callback" />
+<button type="submit" class="btn">Отправить</button>
+</div>
+</form>
+</div>

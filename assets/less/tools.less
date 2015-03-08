@@ -1,0 +1,76 @@
+/* Utility
+------------------------------------------------------------------------------*/
+
+._tc{text-align: center;}
+
+._tl{text-align: left;}
+
+._tr {text-align: right;}
+
+._nw {white-space: nowrap;}
+
+._cf {.clearfix;}
+
+._fl {float: left;}
+._fr {float: right;}
+._db {display: inline-block;}
+
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
+
+#scrollUp {
+
+  position: fixed;
+
+  background: rgba(0, 0, 0, .5);
+  bottom: 40%;
+  right: 1rem;
+  display: none;
+
+  z-index: 50;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, .8);
+  }
+
+  &, &:after {
+    height: 5em;
+    line-height: 5em;
+    width: 2em;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+
+  &:after {
+    color: #fff;
+    font-family: 'fontawesome';
+    content: '\f176';
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+  }
+
+}
+
+.a_lnk {
+
+  color: #A36399;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block;
+  z-index: 110;
+  position: relative;
+}
+
+

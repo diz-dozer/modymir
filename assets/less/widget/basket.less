@@ -1,0 +1,94 @@
+.basket {
+
+  border-radius: 3px;
+  border: 1px dotted #eee;
+  padding: 8px;
+  display: block;
+
+  color: #000;
+  position: relative;
+
+  &.empty {
+    color: #777;
+  }
+
+  dt, dd {
+    padding-left: 60px;
+    white-space: nowrap;
+  }
+
+  .tit {
+    font-size: 23px;
+    font-weight: normal;
+    line-height: 25px;
+    display: inline-block;
+    text-decoration: none;
+
+    font-family: @font-family-logo;
+
+    &:before {
+
+      &:extend(.sprite)
+    ;
+      opacity: .8;
+      content: '';
+      display: block;
+      width: 43px;
+      height: 58px;
+      background-position: -220px 0;
+      position: absolute;
+      left:8px;
+      top: 3px;
+    }
+
+  }
+
+  .sc_qty,
+  .sc_hint,
+  .sc_val {
+    display: inline-block;
+  }
+  .sc_qty {
+    margin-right: 5px;
+  }
+
+  .sc_hint {
+  }
+
+  .sc_val {
+    margin-left: .5em;
+
+    &:before {
+      display: inline-block;
+      content: '|';
+      color: #777;
+      margin-right: 1em;
+    }
+  }
+
+}
+
+//.schedule {
+//
+//  line-height: 1;
+//  margin-bottom: 5px;
+//  position: relative;
+//  top:-2px;
+//  text-align: center;
+//  display: block;
+//
+//  dt, dd {
+//    display: inline-block;
+//    font-size: 11px;
+//    font-weight: 400;
+//    margin: 0 3px;
+//  }
+//
+//  dd {
+//    color: #666;
+//  }
+//  dt {
+//    color: #000;
+//  }
+//
+//}

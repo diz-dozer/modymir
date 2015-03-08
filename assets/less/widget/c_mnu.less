@@ -1,0 +1,50 @@
+.c_mnu {
+  font-size: 11px;
+  text-transform: uppercase;
+
+  .itm, .lnk {
+    display: block;
+    text-decoration: none;
+  }
+
+  .itm {
+    margin-bottom: 2px;
+  }
+
+
+  .lnk {
+
+
+    background: #eee;
+    border-radius: 3px;
+    color: #000;
+    line-height: 1.2em;
+    padding: 0.9em 1em;
+
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 0.2s ease-out 0s;
+
+
+    &:hover {
+      background: #ddd;
+      text-decoration: none;
+    }
+  }
+
+
+  .itm.active{
+
+    .lnk,
+    .lnk:hover {
+      background:#FFCB00;
+      color: #000;
+    }
+
+  }
+
+
+}
+
+
+
+

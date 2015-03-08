@@ -1,0 +1,72 @@
+html, body {
+  background-color: #D2CFD8;
+}
+
+body {
+  min-width: @body-width;
+}
+
+.container {
+  .container;
+}
+
+@fh: 9.5rem;
+
+#fixed {
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 200;
+
+}
+
+#map{
+  position: relative;
+  margin: 125px auto 0;
+  height: 320px;
+  border-bottom: @hr solid #A36399;
+}
+#content {
+  padding-top: 9rem;
+  padding-bottom: 2rem;
+  background-color: #EAE6F0;
+
+  &.with_map{
+    padding-top: @grid-gutter;
+  }
+
+}
+
+.with_aside {
+
+  aside {
+    .col(1, 4);
+  }
+
+  main {
+    .col(3, 4);
+//    padding-left: @grid-gutter*2;
+  }
+
+}
+
+.offers {
+
+  .clearfix;
+
+  > .offer {
+    .cols(4);
+  }
+
+}
+
+._banans {
+
+  .clearfix;
+
+  .banan {
+    .cols(3);
+  }
+}

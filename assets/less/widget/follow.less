@@ -1,0 +1,87 @@
+.follow {
+
+  margin-bottom: 0;
+  text-align: right;
+
+  opacity: .5;
+
+  .itm {
+    margin-left: 4px;
+  }
+
+  .ico {
+
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+
+    border-radius:3px;
+    color: #fff;
+
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+
+    opacity: .8;
+    overflow: hidden;
+    text-decoration: none;
+
+    span {
+      text-indent: -999px;
+    }
+
+    &:before {
+      display: inline-block;
+      color: #fff;
+      font: 400 14px/25px 'FontAwesome';
+      position: relative;
+      text-align: center;
+      width: 25px;
+    }
+
+    &._vk {
+
+      background-color: #2F5070;
+      &:before {
+        content: '\f189'
+      }
+    }
+    &._fb {
+      background-color: #305891;
+      &:before {
+        content: '\f09a'
+      }
+    }
+    &._tw {
+      background-color: #2CA8D2;
+      &:before {
+        content: '\f099'
+      }
+    }
+  }
+
+  &._vert {
+
+    li {
+      display: block;
+      margin-bottom:8px;
+      text-align: center;
+    }
+
+    .ico {
+
+      &,&:before{
+        height: 35px;
+        line-height: 35px;
+        width: 35px;
+        margin: 0;
+      }
+
+      &:before {
+        font-size: 20px;
+
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bower": "latest",
+    "gulp": "latest",
+    "gulp-uglify": "latest",
+    "gulp-concat": "latest",
+    "gulp-less": "latest",
+    "gulp-csso": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-minify-html": "latest",
+    "gulp-util": "latest",
+    "gulp-data-uri": "latest",
+    "main-bower-files": "latest",
+    "gulp-debug": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-pleeease": "latest",
+    "gulp-base64": "latest",
+    "del": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp-inline-css": "^2.0.0",
+    "gulp-inline-source": "^1.2.0",
+    "gulp-htmlmin": "^1.1.0",
+    "gulp-clean": "^0.3.1"
+  }
+}

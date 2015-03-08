@@ -1,0 +1,85 @@
+@correction: (.5 / @grid-width * 100) * 1%;
+
+.clearfix {
+  .clearfix;
+}
+
+.container() {
+
+
+  &:extend(.clearfix);
+
+  width: @grid-width;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.col {
+
+  //   float: left;
+  //
+  //  box-sizing: border-box;
+
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+
+}
+
+.col(@c:1,@r:1) {
+
+  &:extend(.col);
+  ._cw(@c, @r);
+
+}
+
+.cols(@r:1,@g:2%) {
+
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  margin-right: @g;
+  margin-bottom: @g;
+
+  @p: ((@r* @g ) - @g) / @r;
+
+  @width: (100% / @r) - @p;
+
+  //  width: @width - @correction;
+  width: @width;
+
+  &:nth-child(@{r}n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(@{r}n+1) {
+    clear: left;
+  }
+
+}
+
+._cw(@c,@r) {
+
+  //  @width: round((@c / @r) * 100%, 2);
+  //width: @width - @correction;
+
+  @width: (@c / @r) * 100%;
+  width: @width;
+}
+
+.i-loop (@i) when (@i > 0) {
+  @it: @i - 1;
+  .j-loop (@j) when (@j > 0) {
+    .col._@{j}_@{i} {
+      ._cw(@j, @i)
+    }
+    .j-loop(@j - 1);
+  }
+
+  .j-loop(@it);
+  .i-loop(@it);
+}
+
+.i-loop(10);

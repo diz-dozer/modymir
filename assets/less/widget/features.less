@@ -1,0 +1,41 @@
+.w_features {
+
+}
+
+.features {
+
+  padding-top: 50px;
+  .itm {
+
+    color: #777;
+    font-size: 11px;
+    line-height: 1.1;
+    text-align: center;
+
+  }
+
+  .lbl {
+    font-style: normal;
+
+    &:before {
+
+      &:extend(.sprite)
+    ;
+      position: absolute;
+      content: '';
+      display: block;
+      height: 34px;
+      left: 40px;
+      top: -40px;
+      width: 41px;
+
+    }
+
+
+    &._delivery:before {background-position: 0 4px;}
+    &._moda:before {background-position: 0 -60px;}
+    &._choice:before {background-position: 0 -120px;}
+
+  }
+
+}
